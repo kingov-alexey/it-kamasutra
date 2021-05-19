@@ -6,7 +6,7 @@ const Profile = () => {
       <div>
         <img src="http://www.vkrg.kz/images/img1.jpg" />
       </div>
-      <div>ava + description</div>
+      <div>ava + description!</div>
       <div>
         my posts
         <div>New post</div>
