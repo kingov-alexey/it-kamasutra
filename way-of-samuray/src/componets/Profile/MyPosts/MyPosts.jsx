@@ -15,7 +15,7 @@ const MyPosts = () => {
           <Post message="Hello world!" like="15" />
           <Post message="asdfasdf" like="20" />
           <Post message="Hello world3" like="20" />
-          <Post message="Hello world4" like="30" />
+          <Post message="Hello world4" like="31" />
           <Post message="Hello world5" like="20" />
           <Post message="Hello world6" like="20" />
           <Post message="Hello world7" like="20" />
