@@ -4,7 +4,7 @@ import css from './Profile.module.css';
 
 const Profile = () => {
   return (
-    <div className={css.content}>
+    <div>
       <div>
         <img src="http://www.vkrg.kz/images/img1.jpg" />
       </div>
