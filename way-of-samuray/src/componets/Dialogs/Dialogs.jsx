@@ -2,54 +2,38 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import { NavLink } from 'react-router-dom';
 
+const DialogItem = props => {
+  let path = '/dialogs/' + props.id;
+  return (
+    <div className={s.dialog}>
+      {/* <NavLink to={'/dialogs/' + props.id} activeClassName={s.active}> */}
+      <NavLink to={path} activeClassName={s.active}>
+        {props.name}
+      </NavLink>
+    </div>
+  );
+};
+
+const Message = props => {
+  return <div className={s.message}>{props.message}}</div>;
+};
+
 const Dialogs = props => {
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/0" activeClassName={s.active}>
-            Игорь1
-          </NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/1" activeClassName={s.active}>
-            Игорь2
-          </NavLink>
-        </div>
-        <div className={s.dialog}>
-          <NavLink to="/dialogs/2" activeClassName={s.active}>
-            Аскар
-          </NavLink>
-        </div>
-        <div className={s.dialog}>
-          {' '}
-          <NavLink to="/dialogs/3" activeClassName={s.active}>
-            Толян
-          </NavLink>
-        </div>
-        <div className={s.dialog}>
-          {' '}
-          <NavLink to="/dialogs/4" activeClassName={s.active}>
-            Витек
-          </NavLink>
-        </div>
-        <div className={s.dialog}>
-          {' '}
-          <NavLink to="/dialogs/5" activeClassName={s.active}>
-            Стас
-          </NavLink>
-        </div>
-        <div className={s.dialog}>
-          {' '}
-          <NavLink to="/dialogs/6" activeClassName={s.active}>
-            Азиз
-          </NavLink>
-        </div>
+        <DialogItem name="dimych" id="0" />
+        <DialogItem name="Alexey" id="1" />
+        <DialogItem name="Gary" id="2" />
+        <DialogItem name="Igor" id="3" />
+        <DialogItem name="Tolik" id="4" />
+        <DialogItem name="Vitek" id="5" />
       </div>
       <div className={s.messages}>
-        <div className={s.message}>Hi</div>
-        <div className={s.message}>asdfasdf</div>
-        <div className={s.message}>asdfasdf</div>
+        <Message message="aaaa sss dd f " />
+        <Message message="asdf" />
+        <Message message="fdas" />
+        <Message message="234234" />
       </div>
     </div>
   );
