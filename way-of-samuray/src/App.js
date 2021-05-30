@@ -9,6 +9,7 @@ import News from './componets/News/News';
 import Music from './componets/Music/Music';
 import Settings from './componets/Settings/Settings';
 
+//testOnWork
 function App(props) {
   return (
     <div className="app-wrapper">
