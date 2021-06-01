@@ -88,7 +88,6 @@ export const updateNewPostTextActionCreator = text => {
 
 export const sendMessageCreator = () => ({ type: SEND_MESSAGE });
 export const updateNewMessageBodyCreator = body => {
-  debugger;
   return {
     type: UPDATE_NEW_MESSAGE_BODY,
     body: body,
