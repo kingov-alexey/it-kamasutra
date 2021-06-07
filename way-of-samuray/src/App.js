@@ -10,6 +10,7 @@ import Music from './componets/Music/Music';
 import Settings from './componets/Settings/Settings';
 import DialogsContainer from './componets/Dialogs/DialogsContainer';
 
+//
 function App(props) {
   return (
     <div className="app-wrapper">
